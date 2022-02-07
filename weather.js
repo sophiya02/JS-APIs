@@ -7,7 +7,7 @@ async function getWeatherData() {
 
     try {
         console.log(cityValue);
-        let wres = await fetch(`http://api.weatherapi.com/v1/current.json?key=9ec8d3e2584f417397685005220702&q=${cityValue}&aqi=no`);
+        let wres = await fetch(`https://api.weatherapi.com/v1/current.json?key=9ec8d3e2584f417397685005220702&q=${cityValue}&aqi=no`);
         let wdata = await wres.json();
         // console.log(wdata);
         return wdata;
