@@ -4,9 +4,7 @@
     background-size: cover;
     
 }
-.para {
-    color:white;
-}
+
 .container{
     margin:0;
     
@@ -121,6 +119,103 @@
     padding:10rem 1rem 1rem 0rem;
     
 }
-/* #displayData{
-    display:"none";
-} */
+#weather{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+form>input{
+    border: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.157);
+    padding:0.5rem 0 0.5rem 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    outline-color:  rgba(255, 255, 255, 0.623);
+    width:15rem;
+    font-size: 1rem;
+}
+#submit{
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 12rem ;
+    color:white;
+    border: 3px solid white;
+    border-radius: 5rem;
+    background-color: transparent;
+
+}
+#displayData{
+    color:white;
+    text-align: center;
+    display: none;
+    grid-template-areas: "c c b"
+                         "d e a"
+                         "f g g"
+                         "h h i"
+                         "j j j";
+    
+
+    
+}
+#fail{
+    color: white;
+    text-align: center;
+    display: none;    
+}
+.para {
+    color:white;
+    margin:0.5rem auto;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    min-width:4rem;
+    
+    /* padding: 1rem; */
+}
+#ele1{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#ele2{
+    width:4rem;
+    height: 4rem;
+    grid-area: b;
+}
+#ele3{
+    grid-area:c;
+}
+#ele4{
+    grid-area: d;
+}
+#ele5{
+    grid-area: e;
+}
+#ele6{
+    grid-area: f;
+}
+#ele7{
+    grid-area: g;
+}
+#ele8{
+    grid-area: h;
+}
+#ele9{
+    grid-area: i;
+}
+#ele10{
+    grid-area: j;
+}
