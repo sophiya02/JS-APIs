@@ -1,0 +1,4 @@
+const config={
+    NASA_API_KEY:'wcdpLCn8ZLi41vjg8Noil5EHHsbFKdL6aiWX6RSi',
+    WEATHER_API_KEY: '9ec8d3e2584f417397685005220702'
+};
