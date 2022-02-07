@@ -1,0 +1,126 @@
+*body{
+    margin: 0%;
+    background: rgba(0, 0, 0, 0.637) no-repeat fixed center;
+    background-size: cover;
+    
+}
+.para {
+    color:white;
+}
+.container{
+    margin:0;
+    
+}
+#corner{
+    background-color: rgba(255, 255, 255, 0.733);
+    position: fixed;
+    right: 1rem;
+    top:0.95rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    /* width: 5rem;
+    height: 5rem; */
+    border-radius: 50%;
+    transition: all ease-in-out;
+
+    /* animation: bgChange 1.15s ease infinite; */
+}
+#corner:hover{
+    cursor: pointer;
+    width: 1.85rem;
+    height: 1.85rem;
+    right: 0.95rem;
+    top:0.85rem;
+    animation: bgChange 1s ease infinite;
+}
+#corner:hover .fa{
+    font-size: 1.25rem;
+    right: 0.2rem;
+    top:0rem;
+}
+.fa{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+    position: fixed;
+    right: 1.2rem;
+    top:1rem;
+    padding: 0.25rem;
+    transition: all ease-in-out;
+    animation: right 1.15s ease 3;
+    /* border:2px solid red; */
+    text-align: center;
+    font-size: 1.15rem;
+}
+@keyframes right{
+    0%{
+        opacity:1;
+        transform: translateX(0);
+    }
+    25%{
+        opacity:0.75;
+        transform: translateX(-1.5px);
+    }
+    50%{
+        opacity:0.5;
+        transform: translateX(-2.5px);
+    }
+    75%{
+        opacity:0.25;
+        transform: translateX(-3.5px);
+    }
+    100%{
+        opacity:0.05;
+        transform: translateX(-4.5px);
+    }
+
+}
+@keyframes bgChange{
+    0%{
+        opacity:1;
+        transform: scale(1);        
+    }
+    25%{
+        opacity:0.95;
+        transform: scale(1.05);       
+    }
+    50%{
+        opacity:0.9;
+        transform: scale(1.1);        
+    }
+     75%{
+        opacity:0.85;
+        transform: scale(1.15);       
+    }
+    100%{
+        opacity:0.8;
+        transform: scale(1.2);
+        
+       }
+
+}
+.about-bg{
+    display: none;
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    background-color: rgba(255, 255, 255, 0.897);
+    width:fit-content;
+    /* margin:1rem; */
+    padding:1rem;
+}
+
+#content{
+    width:15rem;
+    height: 20rem;
+    overflow-y: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10rem 1rem 1rem 0rem;
+    
+}
+/* #displayData{
+    display:"none";
+} */
