@@ -1,4 +1,4 @@
-
+//This is a sample code how to FETCH request using API keys
 // async function loadUsers(){
 //      const res=await fetch("data.json");
 //      const users=await res.json();
@@ -16,22 +16,22 @@
 // console.log("after click");
 
 
-async function getData(){
-    const res= await fetch('https://api.github.com/users');
+// async function getData(){
+    // const res= await fetch('https://api.github.com/users');
     // console.log("res: " + typeof(res));
     // console.log(res);
-    const data=await res.json();
+    // const data=await res.json();
     // converts the data to json format using JSON.stringyfy();
     // console.log(data);
     // console.log("data: " +typeof(data));
-    return data;
-}
+    // return data;
+// }
 // getData();
-window.addEventListener('DOMContentLoaded', async()=>{
-    let data=await getData();
+// window.addEventListener('DOMContentLoaded', async()=>{
+    // let data=await getData();
     // console.log("data1: " +typeof(data));
-    for(let key in data)
-    {
+    // for(let key in data)
+    // {
         // console.log(data[0].avatar_url)
         // document.body.style.backgroundImage=`url("${data[0].avatar_url}"`;
         // document.getElementById("container").style.backgroundImage=`url("${data[0].avatar_url}"`;
@@ -43,5 +43,5 @@ window.addEventListener('DOMContentLoaded', async()=>{
         // document.getElementById("para3").innerHTML=data[2].login;
         // document.getElementById("img4").src=data[3].avatar_url;
         // document.getElementById("para4").innerHTML=data[3].login;
-    }
-})
+    // }
+// })
